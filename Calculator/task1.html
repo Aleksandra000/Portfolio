@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+       <div id="container" >
+       <form name="cal">
+          <input type="text" id="scr" name="scr" placeholder="0" readonly/>
+            <div id="cont">
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value=''" value="C">
+
+              <input type="button" class="btn1" name="b1" onclick="del()" value="&larr;">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='%'" value="%">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='/'" value="/">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='7'" value="7">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='8'" value="8">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='9'" value="9">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='*'" value="*">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='4'" value="4">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='5'" value="5">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='6'" value="6">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='-'" value="-">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='1'" value="1">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='2'" value="2">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='3'" value="3">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='+'" value="+">
+
+              <input type="button" class="btn1" name="b1" onclick="cal.scr.value+='0'" value="0">
+
+              <input type="button" class="btn1"  name="b1" onclick="cal.scr.value+='.'" value=".">
+
+              <input type="button" class="btn1" id="sum" name="b1" onclick="cal.scr.value =eval(cal.scr.value)" value="="/>
+              </form>
+            </div>
+       </div>
+       <script src="app.js" ></script>
+    </body>
+</html>
